@@ -1,0 +1,35 @@
+.editorWrap {
+	width: 600px;
+	margin: 18px auto;
+}
+
+.editorWrap .toolbar {
+	width: 99%;
+	text-align: right;
+}
+.toolbar {
+	position: relative;
+	background-color: #4aa3a3;
+	padding: 4px 4px 3px 3px;
+	border: 1px solid #1d2f2f;
+	box-shadow: 1px 1px 10px 2px #3a5f5f;
+	font-family: Russo One;
+	font-size: 15px;
+}
+
+textarea#editor {
+	width: 99%;
+	min-height: 200px;
+	margin-bottom: -5px;
+	resize: vertical;
+	outline: none;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+#preview {
+	margin-left: 5px;
+	margin-top: -10px;
+	width: 100%;
+}

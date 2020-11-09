@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+/* $darkAccent: #224b4b;
+$lightAccent: #2cda9d;
+$backgroundBase: #619e9e; */
+
+/* $shadow: 1px 1px 10px 2px darken($backgroundBase, 20%);
+$default-border: 1px solid darken($backgroundBase, 35%); */
+
+body {
+	background-color: #619e9e;
+}
