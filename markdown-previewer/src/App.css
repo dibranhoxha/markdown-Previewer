@@ -5,8 +5,8 @@
 
 .editorWrap .toolbar {
 	width: 99%;
-	text-align: right;
 }
+
 .toolbar {
 	position: relative;
 	background-color: #4aa3a3;
@@ -28,7 +28,27 @@ textarea#editor {
 	font-size: 12px;
 }
 
-#preview {
+.colorScheme,
+.editorWrap textarea,
+.previewWrap {
+	background-color: #c0d8d8;
+	border: 1px solid #1d2f2f;
+	box-shadow: 1px 1px 10px 2px #3a5f5f;
+	border-top: none;
+}
+
+.previewWrap {
+	width: 800px;
+	margin: 20px auto;
+	min-height: 200px;
+	overflow-wrap: break-word;
+}
+
+.previewWrap .toolbar {
+	width: 99%;
+}
+
+.previewWrap #preview {
 	margin-left: 5px;
 	margin-top: -10px;
 	width: 100%;
