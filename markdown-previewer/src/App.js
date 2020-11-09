@@ -1,17 +1,30 @@
 import React from 'react';
 import './App.css'
+import ReactMarkdown from 'react-markdown';
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      markdown: placeholder,
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
 
+  handleChange(e) {
+    this.setState({
+      markdown: e.target.value
+    })
+  }
   render() {
     return (
       <div>
         <div className="editorWrap">
           <div class="toolbar">Editor</div>
-          <Editor />
+          <Editor markdown={this.state.markdown} onChange={this.handleChange} />
         </div>
         <div className="previewWrap">
           <div class="toolbar">Previewer</div>
-          <Preview />
+          <Preview markdown={this.state.markdown} />
         </div>
 
       </div>
@@ -34,7 +47,7 @@ const Preview = props => {
   return (
     <div
       id="preview"
-    />
+    ><ReactMarkdown source={props.markdown} /></div>
   )
 }
 
